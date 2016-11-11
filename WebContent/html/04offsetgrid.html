@@ -1,0 +1,49 @@
+<!--@CreatedBy/@Date: Murugan_Nagarajan/Nov 12, 2016-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Offset Grid</title>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/customstyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<!-- Lets say the first two columns needs to be aligned in the center 
+		 the we need to add some empty space in the front which is achieved by offset value -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"><div class="colGreyDiv"> First Content </div></div>
+			<div class="col-sm-3"><div class="colGreyDiv"> Second Content </div></div>
+			<div class="col-sm-3"><div class="colGreyDiv"> Third Content </div></div>
+			<div class="col-sm-3"><div class="colGreyDiv"> Fourth Content </div></div>
+		</div>
+	</div>	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"><div class="colSilverDiv"> First Content </div></div>
+			<div class="col-sm-3"><div class="colSilverDiv"> Second Content </div></div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-3 col-sm-3"><div class="colSilverDiv"> First Content </div></div>
+			<div class="col-sm-3"><div class="colSilverDiv"> Second Content </div></div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"><div class="colSkyBlueDiv"> First Content </div></div>
+			<div class="col-sm-3 col-sm-offset-6"><div class="colSkyBlueDiv"> Second Content </div></div>
+		</div>
+	</div>
+  </body>
+</html>

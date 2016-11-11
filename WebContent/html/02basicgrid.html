@@ -1,0 +1,57 @@
+<!--@Authour/Date: Murugan_Nagarajan/Nov 12, 2016-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Basic Grid</title>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/customstyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+	<!-- Always the total columns available in a row is 12 -->
+	<!-- So split it in 1:4:1 ratio -->
+		<div class="row">
+			<div class="col-md-2"><div class="colSilverDiv"> Left Content </div></div>
+			<div class="col-md-8"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-2"><div class="colSilverDiv"> Right Content </div></div>
+		</div>
+	</div>
+	
+	<div class="container">
+	<!-- Always the total columns available in a row is 12 -->
+	<!-- So split it in 1:4:1 ratio -->
+		<div class="row">
+			<div class="col-md-2"><div class="colSilverDiv"> Left Content </div></div>
+			<div class="col-md-4"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-4"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-2"><div class="colSilverDiv"> Right Content </div></div>
+		</div>
+	</div>
+	
+	<!-- Only  if the sum of the column width is equal to 12 , they will share/occupy the complete page-->
+	<!-- See the difference in output between the below two containers -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"><div class="colSilverDiv"> Left Content </div></div>
+			<div class="col-md-3"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-3"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-3"><div class="colSilverDiv"> Right Content </div></div>
+		</div>
+	</div>
+	 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"><div class="colSilverDiv"> Left Content </div></div>
+			<div class="col-md-2"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-2"><div class="colSilverDiv"> Middle Content </div></div>
+			<div class="col-md-2"><div class="colSilverDiv"> Right Content </div></div>
+		</div>
+	</div>	
+  </body>
+</html>

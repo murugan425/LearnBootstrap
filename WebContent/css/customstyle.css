@@ -1,0 +1,30 @@
+.imageMargin {
+	margin-bottom: 2px;
+}
+
+.colSilverDiv {
+	margin-bottom: 2px;
+	min-height: 200px;
+	background-color: silver;
+	text-align: center;
+	font-size: large;
+}
+
+.colSkyBlueDiv {
+	margin: 2px;
+	min-height: 200px;
+	background-color: skyblue ;
+	text-align: center;
+	font-size: large;
+}
+
+.colGreyDiv {
+	margin-bottom: 2px;
+	min-height: 150px;
+	background-color: grey;
+	text-align: center;
+	font-size: large;
+}
+
+
+
