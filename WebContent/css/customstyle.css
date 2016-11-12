@@ -26,5 +26,18 @@
 	font-size: large;
 }
 
+.menuContent {
+	margin-bottom: 5px;
+	min-height: 75px;
+	background-color: silver;
+	text-align: center;
+	font-size: large;
+}
 
-
+.mainContent {
+	margin-bottom: 10px;
+	min-height: 315px;
+	background-color: silver;
+	text-align: center;
+	font-size: large;
+}

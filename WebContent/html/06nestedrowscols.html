@@ -1,0 +1,54 @@
+<!--@CreatedBy/@Date: Murugan_Nagarajan/Nov 12, 2016-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Nested Rows and Cols Grid</title>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/customstyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<!-- Nested rows and columns allows to create customized layout as per our need -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="row"> 
+					<div class="col-sm-12"><div class="menuContent"> Menu1 </div></div>
+					<div class="col-sm-12"><div class="menuContent"> Menu2 </div></div>
+					<div class="col-sm-12"><div class="menuContent"> Menu3 </div></div>
+					<div class="col-sm-12"><div class="menuContent"> Menu4 </div></div>
+				</div>
+			</div>
+			<div class="col-sm-10"><div class="mainContent"> Main Content </div></div>			
+		</div>
+	</div>
+	
+	<!--  We can split the 12 columns into even numbers but if we needed the ratio in odd numbers -->
+	<!-- Nested rows & col's can be used to achieve that  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+				<div class="row"> 
+					<div class="col-sm-6"><div class="menuContent"> COL 1 - CONTENT 5 </div></div>
+					<div class="col-sm-6"><div class="menuContent"> COL 2 - CONTENT 5 </div></div>
+				</div>
+			</div>
+			<div class="col-sm-7"><div class="menuContent"> COL 1 - CONTENT 7 </div></div>			
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"><div class="menuContent"> CONTENT 1 - 4/12</div></div>
+			<div class="col-sm-4"><div class="menuContent"> CONTENT 2 - 4/12</div></div>
+			<div class="col-sm-4"><div class="menuContent"> CONTENT 3 - 4/12</div></div>			
+		</div>
+	</div>
+  </body>
+</html>
