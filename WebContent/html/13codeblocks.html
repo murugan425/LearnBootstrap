@@ -1,0 +1,90 @@
+<!--@CreatedBy/@Date: Murugan_Nagarajan/Nov 15, 2016-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Code Blocks Rendering</title>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="/jquery/jquery-3.1.1.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+  			
+  			<div class="col-xs-12">
+  				<!-- Using code & mark tags -->
+  				Code Tag is used to render programs codes properly<br/>
+  				<code>public class HelloWorld {<br/>
+					    public static void main(String[] args) {<br/>
+					        // Prints "Hello, World" to the terminal window.<br/>
+					        System.out.println<mark>("Hello, World")</mark>;<br/>
+					    }<br/>
+					}<br/>
+  				</code>	as shown above.	And &lt;mark&gt; tag is used to <mark>highlight</mark> the required snippet in it.
+  			</div>
+  			  			
+  			<div class="col-xs-pull-0 col-xs-6">	
+  				<!-- Here just using code tag we need to use so many <br/> tag to introduce line breaks -->
+  				<!-- To avoid it we can use pre tags as shown below -->
+  				<!-- Using pre tag be cautious about the white space & line breaks in the code,
+  				as they may be rendered as it is in the html file -->
+  				<pre>public class HelloWorld {					
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World!!!");
+    }
+}  				</pre>
+  			</div>
+  			<div class="col-xs-pull-0 col-xs-9">
+	  			<!-- <samp> is used to display the console output text in a different style-->
+				<samp>Hello, World!!!</samp> - Hello World shown in console using above snippet
+				
+				<br/>
+				
+				<!-- <kbd> tag is used to display/highlight keyboard input characters -->
+				<code>Select &amp; Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy the snippet.</code>
+			</div>
+  			<div class="col-xs-pull-0 col-xs-9">
+  			<!-- Adding scroll-bar for lengthy code snippet and also styling the 
+  			variables in italic format using var tag -->
+  			<pre class="pre-scrollable"><code>/**
+ * @author	: Murugan_Nagarajan
+ * @date	: Sep 12, 2015
+ * @time	: 7:47:52 PM
+ */
+package com.tamil.learnspring.logger;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.tamil.learnspring.loggers.CustomLogger;
+
+/**
+ * @author Murugan_Nagarajan
+ *
+ */
+public class AppMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		ApplicationContext <var>context</var> = new ClassPathXmlApplicationContext(<mark>"SpringBeans.xml"</mark>);
+		CustomLogger <var>logger</var> = (CustomLogger)context.getBean("logger");
+		<var>logger</var>.writeLogToConsole("errorMsg");
+		<var>logger</var>.writeLogToDB("errorMsg");
+		<var>logger</var>.writeLogToFile("errorMsg");
+		((ClassPathXmlApplicationContext)<var>context</var>).close();
+
+	}
+}				</code></pre>			 
+  			</div>
+  		</div>
+  	</div>
+  </body>
+</html>
